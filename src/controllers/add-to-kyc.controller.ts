@@ -6,9 +6,7 @@ import {addressValidation} from '../services/Validation';
 
 export class AddToKycController {
   @post('/addToKyc/{address}')
-  async addToWhitelist(
-    @param.path.string('address') address: string,
-  ): Promise<any> {
+  async addToKyc(@param.path.string('address') address: string): Promise<any> {
     try {
       const data: IValidation = {
         address: address,

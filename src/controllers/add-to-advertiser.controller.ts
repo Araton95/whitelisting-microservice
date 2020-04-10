@@ -6,7 +6,7 @@ import {addressValidation} from '../services/Validation';
 
 export class AddToAdvertiserController {
   @post('/addToAdvertiser/{address}')
-  async addToWhitelist(
+  async addToAdvertiser(
     @param.path.string('address') address: string,
   ): Promise<any> {
     try {
