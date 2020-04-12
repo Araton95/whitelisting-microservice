@@ -14,7 +14,7 @@ export class Contract {
     const web3 = ServiceLocator.getWeb3Util().web3;
     return new web3.eth.Contract(
       this.abiArray,
-      '0x25419d00bf3d0f97cd1c268882519a15cbf0074b',
+      process.env.PUBLIC_SALE_CONTRACT,
     );
   }
 }

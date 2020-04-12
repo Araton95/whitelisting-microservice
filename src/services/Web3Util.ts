@@ -1,7 +1,5 @@
 const Web3 = require('web3');
-const web3 = new Web3(
-  'https://ropsten.infura.io/v3/4f28512692834d4e8f7ed45500dfa839',
-);
+const web3 = new Web3('https://ropsten.infura.io/v3/' + process.env.INFURA_KEY);
 
 export class Web3Util {
   public web3: any;
